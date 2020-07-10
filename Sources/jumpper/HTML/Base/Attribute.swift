@@ -57,9 +57,9 @@ public final class Attribute {
 
         attributes.forEach { (attr, value) in
             if let value = value {
-                attrs += " " + attr + "='" + value + "'";
+                attrs += " " + attr + "='" + value + "'"
             } else {
-                attrs += " " + attr;
+                attrs += " " + attr
             }
         }
 
