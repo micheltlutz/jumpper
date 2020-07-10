@@ -2,15 +2,17 @@ name: Swift
 
 on:
   push:
-    branches: [ master, developer ]
+    branches: 
+      - developer
+      - master
   pull_request:
-    branches: [ master, developer ]
+    branches: 
+      - developer
+      - master
 
 jobs:
   build:
-
     runs-on: macos-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Build
