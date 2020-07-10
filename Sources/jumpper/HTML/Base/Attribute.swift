@@ -29,39 +29,44 @@ public typealias AttributeType = (String, String?)
 
 /// This class is responsible for managing attributes of HTML elements
 public final class Attribute {
+    /// Contains a array of AttributeType
     private var attributes: [AttributeType] = []
     // MARK: - Initialization
-    ///
+    /// Init with array of AttributeType
+    /// - Parameter: **attributes** `[AttributeType]`
     public init(_ attributes: [AttributeType]){
         self.attributes = attributes
     }
 
+    // MARK: - Functions
+
+    /// This method add a new single attribute
+    /// - Parameter: **attr** `AttributeType`
     public func add(_ attr: AttributeType){
         attributes.append(attr)
     }
-
+    /// This function return all attribures
+    /// - Returns: [AttributeType]
     public func getAll() -> [AttributeType] {
         return attributes
     }
-
-    public func generate() -> String {
+    /// This method return a `String` with all attributes
+    /// - Returns: `String` all attributes
+    public func getString() -> String {
         var attrs: String = ""
 
         attributes.forEach { (attr, value) in
-            if value == "#" {
-                attrs += " " + attr;
+            if let value = value {
+                attrs += " " + attr + "='" + value + "'";
             } else {
-                if let value = value {
-                    attrs += " " + attr + "='" + value + "'";
-                } else {
-                    attrs += " " + attr;
-                }
+                attrs += " " + attr;
             }
         }
+
         return attrs
     }
-
-    public func getString() -> String {
-        return self.generate()
+    /// This method print all attributes
+    public func generate() {
+        print(getString())
     }
 }

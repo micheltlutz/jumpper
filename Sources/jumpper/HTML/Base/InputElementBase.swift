@@ -37,6 +37,12 @@ public class InputElementBase: GenericElement {
         }
     }
 
+    override var formElement: Bool {
+        get {
+            return true
+        }
+    }
+
     public init(_ value: String, type: String) {
         super.init()
 

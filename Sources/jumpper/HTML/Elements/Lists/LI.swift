@@ -44,7 +44,7 @@ class LI: GenericElement {
 
             objects.append(text)
         } else {
-            guard let genericElement = element as? Element else { return }
+            guard let genericElement = element as? ElementProtocol else { return }
 
             objects.append(genericElement)
         }
