@@ -1,16 +1,16 @@
-name: Swift
+name: Build Test develop
 
 on:
   push:
-    branches: [ master, developer ]
+    branches: 
+      - master
   pull_request:
-    branches: [ master, developer ]
+    branches: 
+      - master
 
 jobs:
   build:
-
     runs-on: macos-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Build
