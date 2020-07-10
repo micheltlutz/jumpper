@@ -8,10 +8,10 @@
 </p>
 
 
-![Swift](https://github.com/passbook/Key/workflows/Swift/badge.svg)
+![jumpper tests](https://github.com/jumpper/jumpper/workflows/Swift/badge.svg?branch=develop)
 [![License](https://img.shields.io/github/license/micheltlutz/MLBootstrap)](https://raw.githubusercontent.com/jumpper/jumpper/develop/LICENSE)
 [![codebeat badge](https://codebeat.co/badges/31d5d9f4-77af-4e51-9523-30f55ae9a069)](https://codebeat.co/a/michel-anderson-lutz-teixeira/projects/github-com-jumpper-jumpper-develop)
-![Swift](https://github.com/jumpper/jumpper/workflows/Swift/badge.svg?branch=develop)
+
 
 
 # Vapor usage
