@@ -24,35 +24,52 @@
 
 import Foundation
 
-public class GenericElement: Element {
+/// Base Class for all HTML elements implement
+public class GenericElement: ElementProtocol {
+    ///Contains a array with `AttributeType`
     public var attributes: [AttributeType] = []
+    ///Contains `String` with tag element
     private(set) var tag: String = ""
+    ///Define if element is block tag or line tag
     private(set) var container: Bool = false
+    ///Define if element is a form element
     private(set) var formElement: Bool = false
-    public var objects: [Element] = [Element]()
+    ///Contains a array of elements
+    public var objects: [ElementProtocol] = [ElementProtocol]()
 
+    // MARK: - Initialization
+    /// Init with array of AttributeType
+    /// - Parameter: **attributes** `AttributeType...` CVarArg
     public init(_ attributes: AttributeType...){
         self.attributes = attributes
     }
-
+    /// Init with array of AttributeType
+    /// - Parameter: **attributes** `[AttributeType]`
     public init(_ attributes: [AttributeType]){
         self.attributes = attributes
     }
-
+    // MARK: - Functions
+    /// This method add a new single attribute
+    /// - Parameter: **attr** `AttributeType`
     public func addAttribute(_ attr: AttributeType) {
         attributes.append(attr)
     }
 
+    /// This method return open tag and all attributes
+    /// - Returns: `String` open tag with attributes
     func openTag() -> String {
         let attr = Attribute(attributes)
 
         return "<\(tag)\(attr.generate())>"
     }
 
+    /// This method return tag and all elements
+    /// - Returns: `String` close tag
     func closeTag() -> String {
         return "</"+tag+">"
     }
-
+    /// This method return tag and all elements
+    /// - Returns: `String` tag and all elements
     public func getString() -> String {
         var code = openTag()
 
@@ -65,6 +82,7 @@ public class GenericElement: Element {
         return code
     }
 
+    /// This method print tag and all elements
     public func generate() {
         print(openTag())
         if objects.count > 0 {

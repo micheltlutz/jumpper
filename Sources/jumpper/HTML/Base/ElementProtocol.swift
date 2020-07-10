@@ -24,7 +24,10 @@
 
 import Foundation
 
-public protocol Element {
+/// Protocol that defines Element
+public protocol ElementProtocol {
+    ///Returns: `String`
     func getString() -> String
+    /// Print any element
     func generate()
 }

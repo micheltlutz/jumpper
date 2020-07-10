@@ -24,7 +24,7 @@
 
 import Foundation
 
-public class Text: Element {
+public class Text: ElementProtocol {
     private let value: String
 
     public init(_ value: String) {
