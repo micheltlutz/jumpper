@@ -24,3 +24,7 @@ router.get { req -> Future<View> in
      return try req.view().render("base", ["title": "Hello jumpper", "body": div.getString()])
 }
 ```
+
+# Elements Demo
+
+[![Watch the video](doc/thumb_video.png)](https://youtu.be/p3vQgugZ0ZQ)
