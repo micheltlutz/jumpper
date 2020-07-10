@@ -1,14 +1,12 @@
-name: Swift
+name: Build Test develop
 
 on:
   push:
     branches: 
       - developer
-      - master
   pull_request:
     branches: 
       - developer
-      - master
 
 jobs:
   build:
