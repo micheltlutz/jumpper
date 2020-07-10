@@ -60,7 +60,7 @@ public class GenericElement: ElementProtocol {
     func openTag() -> String {
         let attr = Attribute(attributes)
 
-        return "<\(tag)\(attr.generate())>"
+        return "<\(tag)\(attr.getString())>"
     }
 
     /// This method return tag and all elements
