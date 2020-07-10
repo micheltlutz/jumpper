@@ -3,10 +3,10 @@ name: Build Test develop
 on:
   push:
     branches: 
-      - developer
+      - develop
   pull_request:
     branches: 
-      - developer
+      - develop
 
 jobs:
   build:
