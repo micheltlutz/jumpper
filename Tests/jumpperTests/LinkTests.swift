@@ -18,6 +18,6 @@ final class LinkTests: XCTestCase {
 
     static var allTests = [
         ("testLink", testLink),
-        ("testLinkClass", testLinkClass),
+        ("testLinkClass", testLinkClass)
     ]
 }
