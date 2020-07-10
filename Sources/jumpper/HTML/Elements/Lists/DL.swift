@@ -33,7 +33,7 @@ final class DL: UL {
 
     override func add<T>(_ element: T) {
         if element is DT, element is DD {
-            guard let genericElement = element as? Element else { return }
+            guard let genericElement = element as? ElementProtocol else { return }
 
             objects.append(genericElement)
         } else {

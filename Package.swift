@@ -10,8 +10,7 @@ let package = Package(
             name: "jumpper",
             targets: ["jumpper"]),
     ],
-    dependencies: [
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "jumpper",

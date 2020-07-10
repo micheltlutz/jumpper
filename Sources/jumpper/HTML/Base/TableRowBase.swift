@@ -32,7 +32,7 @@ public class TableRowBase: GenericElement {
     }
 
     public func add<T>(_ element: T) {
-        guard let genericElement = element as? Element else { return }
+        guard let genericElement = element as? ElementProtocol else { return }
 
         objects.append(genericElement)
     }
