@@ -81,7 +81,7 @@ public class GenericElement: ElementProtocol {
                 code += obj.getString()
             }
         }
-        
+
         if container {
             code += closeTag()
         }
