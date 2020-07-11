@@ -56,7 +56,7 @@ public final class Select: GenericElement {
 
         self.makeOptions()
     }
-    
+
     // MARK: - Functions
     ///This method iterates over the list of options and creates the option element for each of the items
     private func makeOptions() {

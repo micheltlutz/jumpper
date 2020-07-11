@@ -21,7 +21,11 @@ final class SectionTests: XCTestCase {
         code.add(Small("Section test"))
         code.addAttribute(("class", "sameClass"))
 
-        XCTAssertEqual(code.getString(), "<section id='sectionId' class='sameClass'><small>Section test</small></section>")
+        let result = """
+            <section id='sectionId' class='sameClass'><small>Section test</small></section>
+        """
+
+        XCTAssertEqual(code.getString(), result)
     }
 
     static var allTests = [

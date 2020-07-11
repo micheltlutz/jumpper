@@ -17,6 +17,6 @@ final class ButtonTests: XCTestCase {
 
     static var allTests = [
         ("testElement", testElement),
-        ("testElementAttr", testElementAttr),
+        ("testElementAttr", testElementAttr)
     ]
 }

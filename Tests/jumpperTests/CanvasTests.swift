@@ -9,7 +9,7 @@ final class CanvasTests: XCTestCase {
     }
 
     func testElementAttr() {
-        let canvas = Canvas(("id", "canvasId"),("class", "sameClass"))
+        let canvas = Canvas(("id", "canvasId"), ("class", "sameClass"))
 
         XCTAssertEqual(canvas.getString(), "<canvas id='canvasId' class='sameClass'></canvas>")
     }

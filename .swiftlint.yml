@@ -1,0 +1,58 @@
+disabled_rules: # rule identifiers to exclude from running
+  - identifier_name
+  - large_tuple
+  - trailing_whitespace
+  - type_body_length
+  - cyclomatic_complexity
+  - function_parameter_count
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+
+identifier_name:
+  min_length: # only min_length
+  error: 3 # only error
+  excluded: # excluded via string array
+    - id
+    - i
+    - ok
+    - x
+    - y
+    - URL
+    - GlobalAPIKey
+    - yes
+    - no
+    - A
+    - H1
+    - H2
+    - H3
+    - H4
+    - H5
+    - H6
+    - UL
+    - LI
+    - OL
+    - DD
+    - DL
+    - DT
+    - Tr
+    - Td
+    - Th
+    - Em
+    - Em
+
+
+
+line_length:
+  warning: 150
+  error: 300
+  ignores_comments: true
+  ignores_urls: true
+  ignores_function_declarations: true
+  ### works up until this config rule
+  ignores_interpolated_strings: true
+
+function_body_length:
+  warning: 60
+  error: 80
