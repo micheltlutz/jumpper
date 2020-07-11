@@ -28,29 +28,32 @@ import Foundation
 public class GenericElement: ElementProtocol {
     ///Contains a array with `AttributeType`
     public var attributes: [AttributeType] = []
-    ///Contains `String` with tag element
+    ///Contains `String` with tag element. Default is `""`
     private(set) var tag: String = ""
-    ///Define if element is block tag or line tag
+    ///Define if element is block tag or line tag. Default is `false`
     private(set) var container: Bool = false
-    ///Define if element is a form element
+    ///Define if element is a form element. Default is `false`
     private(set) var formElement: Bool = false
     ///Contains a array of elements
     public var objects: [ElementProtocol] = [ElementProtocol]()
 
     // MARK: - Initialization
     /// Init with array of AttributeType
-    /// - Parameter: **attributes** `AttributeType...` CVarArg
+    ///
+    /// - Usage: `init(("class", "myclass"), ("id", "myId"))`
+    ///
+    /// - Parameter attributes: `AttributeType...` CVarArg
     public init(_ attributes: AttributeType...){
         self.attributes = attributes
     }
     /// Init with array of AttributeType
-    /// - Parameter: **attributes** `[AttributeType]`
+    /// - Parameter attributes: `[AttributeType]`
     public init(_ attributes: [AttributeType]){
         self.attributes = attributes
     }
     // MARK: - Functions
     /// This method add a new single attribute
-    /// - Parameter: **attr** `AttributeType`
+    /// - Parameter attr: `AttributeType`
     public func addAttribute(_ attr: AttributeType) {
         attributes.append(attr)
     }
@@ -78,7 +81,11 @@ public class GenericElement: ElementProtocol {
                 code += obj.getString()
             }
         }
-        code += closeTag()
+        
+        if container {
+            code += closeTag()
+        }
+
         return code
     }
 

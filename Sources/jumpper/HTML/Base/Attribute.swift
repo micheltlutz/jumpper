@@ -29,11 +29,11 @@ public typealias AttributeType = (String, String?)
 
 /// This class is responsible for managing attributes of HTML elements
 public final class Attribute {
-    /// Contains a array of AttributeType
+    /// Contains a array of AttributeType. Default is `[]`
     private var attributes: [AttributeType] = []
     // MARK: - Initialization
     /// Init with array of AttributeType
-    /// - Parameter: **attributes** `[AttributeType]`
+    /// - Parameter attributes: `[AttributeType]`
     public init(_ attributes: [AttributeType]){
         self.attributes = attributes
     }
@@ -41,7 +41,7 @@ public final class Attribute {
     // MARK: - Functions
 
     /// This method add a new single attribute
-    /// - Parameter: **attr** `AttributeType`
+    /// - Parameter attr: `AttributeType`
     public func add(_ attr: AttributeType){
         attributes.append(attr)
     }

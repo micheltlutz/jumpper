@@ -1,3 +1,3 @@
 struct jumpper {
-    var text = "Hello, World!"
+    var version = "1.0.0 alpha"
 }

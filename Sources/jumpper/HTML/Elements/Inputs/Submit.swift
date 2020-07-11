@@ -24,8 +24,13 @@
 
 import Foundation
 
-class Submit: InputElementBase {
-    init(_ value: String) {
+///This class define a submit element
+public class Submit: InputElementBase {
+    // MARK: - Initialization
+    /// Default initializer input submit element
+    /// - Parameters:
+    ///     - value: This is a value for submit **value** `String`
+    public init(_ value: String) {
         super.init(value, type: "submit")
     }
 }

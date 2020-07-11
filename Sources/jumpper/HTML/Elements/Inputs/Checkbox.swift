@@ -24,8 +24,14 @@
 
 import Foundation
 
-class Checkbox: InputElementBase {
-    init(_ name: String, id: String?) {
+/// Class define a input type checkbox
+public final class Checkbox: InputElementBase {
+    // MARK: - Initialization
+    /// Default initializer checkbox element
+    /// - Parameters:
+    ///     - name: This is a name for checkbox **name** `String`
+    ///     - id: This is a id for checkbox **id** `String`
+    public init(_ name: String, id: String?) {
         super.init("", type: "checkbox")
 
         addAttribute(("name", name))

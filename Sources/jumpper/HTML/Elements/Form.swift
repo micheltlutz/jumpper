@@ -24,20 +24,23 @@
 
 import Foundation
 
-final class Form: GenericElement {
+///Form tag element class
+public final class Form: GenericElement {
+    ///Override tag element for element. Default is `form`
     override var tag: String {
         get {
             return "form"
         }
     }
-
+    ///Override container element defaults is `true`
     override var container: Bool {
         get {
             return true
         }
     }
-
-    func add(_ element: GenericElement) {
+    ///This method append a new element in objects list
+    /// - Parameter element: `ElementProtocol`
+    public func add(_ element: GenericElement) {
         objects.append(element)
     }
 }

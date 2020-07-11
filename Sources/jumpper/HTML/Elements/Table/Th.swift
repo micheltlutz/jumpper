@@ -24,7 +24,9 @@
 
 import Foundation
 
+///Th tag element class
 public final class Th: TableColumnBase {
+    ///Override tag element for element. Default is `th`
     override var tag: String {
         get {
             return "th"

@@ -24,7 +24,9 @@
 
 import Foundation
 
+///Tbody tag element class
 public final class TBody: TableRowBase {
+    ///Override tag element for element. Default is `tbody`
     override var tag: String {
         get {
             return "tbody"

@@ -24,20 +24,24 @@
 
 import Foundation
 
-class LI: GenericElement {
+/// Class for list item
+public class LI: GenericElement {
+    ///Override tag element for input elements. Default is `li`
     override var tag: String {
         get {
             return "li"
         }
     }
-
+    ///Override container element for table row elements defaults is `true`
     override var container: Bool {
         get {
             return true
         }
     }
-
-    init<T>(_ element: T) {
+    // MARK: - Initialization
+    ///Initialization with Generic Type
+    /// - Parameter element: Generic Type `ElementProtocol` or `String`
+    public init<T>(_ element: T) {
         super.init()
         if let textElement = element as? String {
             let text = factoryTextWith(textElement)
@@ -50,6 +54,9 @@ class LI: GenericElement {
         }
     }
 
+    /// This method create a `Text` element to user when element T String is passed on add method
+    /// - Parameter text: `String` to create `Text` element
+    /// - Returns: `Text` Element with string passed
     private func factoryTextWith(_ text: String) -> Text {
         return Text(text)
     }

@@ -24,7 +24,9 @@
 
 import Foundation
 
-final class OL: UL {
+///Class for ordered list
+public final class OL: UL {
+    ///Override tag element for input elements. Default is `ol`
     override var tag: String {
         get {
             return "ol"

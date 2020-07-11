@@ -24,7 +24,10 @@
 
 import Foundation
 
-final class H1: TypographyElementBase {
+// MARK: - H1
+///H1 tag element class
+public final class H1: TypographyElementBase {
+    ///Override tag element for element. Default is `h1`
     override var tag: String {
         get {
             return "h1"
@@ -32,7 +35,10 @@ final class H1: TypographyElementBase {
     }
 }
 
-final class H2: TypographyElementBase {
+// MARK: - H2
+///H2 tag element class
+public final class H2: TypographyElementBase {
+    ///Override tag element for element. Default is `h2`
     override var tag: String {
         get {
             return "h2"
@@ -40,7 +46,10 @@ final class H2: TypographyElementBase {
     }
 }
 
-final class H3: TypographyElementBase {
+// MARK: - H3
+///H3 tag element class
+public final class H3: TypographyElementBase {
+    ///Override tag element for element. Default is `h3`
     override var tag: String {
         get {
             return "h3"
@@ -48,7 +57,10 @@ final class H3: TypographyElementBase {
     }
 }
 
-final class H4: TypographyElementBase {
+// MARK: - H4
+///H4 tag element class
+public final class H4: TypographyElementBase {
+    ///Override tag element for element. Default is `h4`
     override var tag: String {
         get {
             return "h4"
@@ -56,7 +68,10 @@ final class H4: TypographyElementBase {
     }
 }
 
-final class H5: TypographyElementBase {
+// MARK: - H5
+///H5 tag element class
+public final class H5: TypographyElementBase {
+    ///Override tag element for element. Default is `h5`
     override var tag: String {
         get {
             return "h5"
@@ -64,7 +79,10 @@ final class H5: TypographyElementBase {
     }
 }
 
-final class H6: TypographyElementBase {
+// MARK: - H6
+///H6 tag element class
+public final class H6: TypographyElementBase {
+    ///Override tag element for element. Default is `h6`
     override var tag: String {
         get {
             return "h6"

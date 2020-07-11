@@ -23,32 +23,12 @@
 //
 import Foundation
 
-public final class Td: GenericElement {
+/// Td tag element class
+public final class Td: ContainerElementBase {
+    ///Override tag element for element. Default is `th`
     override var tag: String {
         get {
             return "td"
         }
-    }
-
-    override var container: Bool {
-        get {
-            return true
-        }
-    }
-
-    public func add<T>(_ element: T) {
-        if let textElement = element as? String {
-            let text = factoryTextWith(textElement)
-
-            objects.append(text)
-        } else {
-            guard let genericElement = element as? ElementProtocol else { return }
-
-            objects.append(genericElement)
-        }
-    }
-
-    private func factoryTextWith(_ text: String) -> Text {
-        return Text(text)
     }
 }

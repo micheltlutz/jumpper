@@ -24,7 +24,9 @@
 
 import Foundation
 
+///Button tag element class
 public class Button: TypographyElementBase {
+    ///Override tag element for element. Default is `button`
     override var tag: String {
         get {
             return "button"

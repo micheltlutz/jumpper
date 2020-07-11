@@ -24,25 +24,25 @@
 
 import Foundation
 
+/// This is a Base class for Input Elements
 public class InputElementBase: GenericElement {
+    ///Override tag element for input elements. Default is `input`
     override var tag: String {
         get {
             return "input"
         }
     }
-
-    override var container: Bool {
-        get {
-            return false
-        }
-    }
-
+    ///Override formElement info input elements are form element for default is `true`
     override var formElement: Bool {
         get {
             return true
         }
     }
-
+    // MARK: - Initialization
+    /// Default initializer input element
+    /// - Parameters:
+    ///     - value: This is a value for input **value** `String`
+    ///     - type: This is a type for input **type** `String`
     public init(_ value: String, type: String) {
         super.init()
 

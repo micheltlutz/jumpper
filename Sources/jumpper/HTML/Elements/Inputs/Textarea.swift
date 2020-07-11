@@ -24,20 +24,24 @@
 
 import Foundation
 
-final class Textarea: GenericElement {
+///This class define a Textarea element
+public final class Textarea: GenericElement {
+    ///Override tag element for option. Default is `option`
     override var tag: String {
         get {
             return "textarea"
         }
     }
-
+    ///Override container element for table row elements defaults is `true`
     override var container: Bool {
         get {
             return true
         }
     }
-
-    func add(_ text: String) {
+    /// This method add a text in textarea element
+    /// - Parameters:
+    ///     - text: This is a text for select **text** `String`
+    public func add(_ text: String) {
         objects.append(Text(text))
     }
 }

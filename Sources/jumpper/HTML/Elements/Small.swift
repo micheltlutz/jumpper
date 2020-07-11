@@ -24,7 +24,9 @@
 
 import Foundation
 
-class Small: TypographyElementBase {
+///Small tag element class
+public class Small: TypographyElementBase {
+    ///Override tag element for element. Default is `small`
     override var tag: String {
         get {
             return "small"

@@ -24,20 +24,23 @@
 
 import Foundation
 
-class UL: GenericElement {
+///Class for Unordered list
+public class UL: GenericElement {
+    ///Override tag element for input elements. Default is `ul`
     override var tag: String {
         get {
             return "ul"
         }
     }
-
+    ///Override container element for table row elements defaults is `true`
     override var container: Bool {
         get {
             return true
         }
     }
-
-    func add<T>(_ element: T) {
+    ///Initialization with Generic Type
+    /// - Parameter element: Generic Type `ElementProtocol` or `String`
+    public func add<T>(_ element: T) {
         if element is LI {
             guard let genericElement = element as? ElementProtocol else { return }
 
@@ -47,6 +50,9 @@ class UL: GenericElement {
         }
     }
 
+    /// This method create a `Text` element to user when element T String is passed on add method
+    /// - Parameter text: `String` to create `Text` element
+    /// - Returns: `Text` Element with string passed
     private func factoryTextWith(_ text: String) -> Text {
         return Text(text)
     }
