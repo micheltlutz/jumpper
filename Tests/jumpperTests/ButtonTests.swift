@@ -10,7 +10,7 @@ final class ButtonTests: XCTestCase {
 
     func testElementAttr() {
         let button = Button("My Button")
-            button.addAttribute(("class","button button-outline") )
+            button.addAttribute(("class", "button button-outline") )
 
         XCTAssertEqual(button.getString(), "<button class='button button-outline'>My Button</button>")
     }
