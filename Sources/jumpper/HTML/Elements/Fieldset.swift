@@ -24,22 +24,24 @@
 
 import Foundation
 
+///Fieldset tag element class
 final class Fieldset: GenericElement {
+    ///Override tag element for element. Default is `fieldset`
     override var tag: String {
         get {
             return "fieldset"
         }
     }
-
+    ///Override container element defaults is `true`
     override var container: Bool {
         get {
             return true
         }
     }
 
-    func add<T>(_ element: T) {
-        guard let genericElement = element as? ElementProtocol else { return }
-
-        objects.append(genericElement)
+    ///This method append a new element in objects list
+    /// - Parameter element: `ElementProtocol`
+    public func add(_ element: ElementProtocol) {
+        objects.append(element)
     }
 }

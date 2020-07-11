@@ -24,14 +24,17 @@
 
 import Foundation
 
-final class DL: UL {
+///Class for description list
+public final class DL: UL {
+    ///Override tag element for input elements. Default is `dl`
     override var tag: String {
         get {
             return "dl"
         }
     }
-
-    override func add<T>(_ element: T) {
+    ///This method append a new element in objects list
+    /// - Parameter element: Generic Type `ElementProtocol` or `String`
+    public override func add<T>(_ element: T) {
         if element is DT, element is DD {
             guard let genericElement = element as? ElementProtocol else { return }
 

@@ -24,19 +24,26 @@
 
 import Foundation
 
-final class Option: GenericElement {
+///This class define a option select element
+public final class Option: GenericElement {
+    ///Override tag element for option. Default is `option`
     override var tag: String {
         get {
             return "option"
         }
     }
-
+    ///Override container element for table row elements defaults is `true`
     override var container: Bool {
         get {
             return true
         }
     }
 
+    // MARK: - Initialization
+    /// Default initializer option element
+    /// - Parameters:
+    ///     - value: This is a value for option **value** `CustomStringConvertible`
+    ///     - text: This is a text for option **text** `CustomStringConvertible`
     public init(_ value: CustomStringConvertible, text: CustomStringConvertible) {
         super.init()
 

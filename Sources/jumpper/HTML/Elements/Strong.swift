@@ -24,7 +24,9 @@
 
 import Foundation
 
-class Strong: TypographyElementBase {
+///Strong tag element class
+public final class Strong: TypographyElementBase {
+    ///Override tag element for element. Default is `strong`
     override var tag: String {
         get {
             return "strong"

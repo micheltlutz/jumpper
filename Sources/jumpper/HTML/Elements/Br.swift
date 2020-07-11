@@ -24,16 +24,12 @@
 
 import Foundation
 
+///Br tag element class
 public final class Br: GenericElement {
+    ///Override tag element for element. Default is `br`
     override var tag: String {
         get {
             return "br"
-        }
-    }
-
-    override var container: Bool {
-        get {
-            return false
         }
     }
 }

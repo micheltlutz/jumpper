@@ -24,8 +24,15 @@
 
 import Foundation
 
-class InputText: InputElementBase {
-    init(_ value: String, id: String? ,placeholder: String?) {
+/// Class define a input type text
+public final class InputText: InputElementBase {
+    // MARK: - Initialization
+    /// Default initializer input text element
+    /// - Parameters:
+    ///     - value: This is a value for checkbox **value** `String`
+    ///     - id: This is a id for checkbox **id** `String?`
+    ///     - placeholder: This is a placeholder for checkbox **placeholder** `String?`
+    public init(_ value: String, id: String?, placeholder: String?) {
         super.init(value, type: "text")
 
         if let placeholder = placeholder {

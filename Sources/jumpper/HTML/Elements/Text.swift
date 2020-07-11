@@ -24,17 +24,24 @@
 
 import Foundation
 
-public class Text: ElementProtocol {
+///Make a simple text Element to append in others elements
+public final class Text: ElementProtocol {
+    ///Text value `String`
     private let value: String
 
+    // MARK: - Initialization
+    ///Initialization with Generic Type
+    /// - Parameter value: text `String`
     public init(_ value: String) {
         self.value = value
     }
 
+    ///Returns text: String
     public func getString() -> String {
         return value
     }
 
+    ///Print text
     public func generate() {
         print(value)
     }

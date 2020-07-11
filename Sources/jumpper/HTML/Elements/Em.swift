@@ -24,7 +24,9 @@
 
 import Foundation
 
-class Em: TypographyElementBase {
+///Emphasis tag element class
+public final class Em: TypographyElementBase {
+    ///Override tag element for element. Default is `em`
     override var tag: String {
         get {
             return "em"

@@ -24,19 +24,20 @@
 
 import Foundation
 
+///Img tag element class
 public final class Img: GenericElement {
+    ///Override tag element for element. Default is `img`
     override var tag: String {
         get {
             return "img"
         }
     }
 
-    override var container: Bool {
-        get {
-            return false
-        }
-    }
-
+    // MARK: - Initialization
+    /// Default initializer input text element
+    /// - Parameters:
+    ///     - src: This is a src attribute for img **src** `String`
+    ///     - attributes: This is a attr for select **attributes** `AttributeType...` CVarArg
     public init(_ src: String, attributes: AttributeType...) {
         super.init(attributes)
 

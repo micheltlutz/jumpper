@@ -24,7 +24,9 @@
 
 import Foundation
 
-class Label: TypographyElementBase {
+///Label tag element class
+public final class Label: TypographyElementBase {
+    ///Override tag element for element. Default is `label`
     override var tag: String {
         get {
             return "label"

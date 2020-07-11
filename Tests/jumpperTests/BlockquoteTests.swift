@@ -2,14 +2,14 @@ import XCTest
 @testable import jumpper
 
 final class BlockquoteTests: XCTestCase {
-    func testBlockquote() {
+    func testElement() {
         let blockquote = Blockquote()
         blockquote.add("Hello, World!")
 
         XCTAssertEqual(blockquote.getString(), "<blockquote>Hello, World!</blockquote>")
     }
 
-    func testBlockquoteAttr() {
+    func testElementAttr() {
         let blockquote = Blockquote(("class", "sameClass"))
         blockquote.add("Hello, World!")
 
@@ -17,7 +17,7 @@ final class BlockquoteTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testBlockquote", testBlockquote),
-        ("testBlockquoteAttr", testBlockquoteAttr)
+        ("testElement", testElement),
+        ("testElementAttr", testElementAttr)
     ]
 }

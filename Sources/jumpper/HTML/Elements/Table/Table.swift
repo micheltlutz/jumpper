@@ -24,25 +24,33 @@
 
 import Foundation
 
+/// Table html tag class element
 public final class Table: GenericElement {
+    ///Object with table body. tr, td: `TBody`
     private let tbody: TBody = TBody()
-
+    ///Object with table head. th, td: THead? is optional
     private var thead: THead?
+    ///List of rows a array of `Tr`tag element
     private var rows: [Tr] = []
-    private var actualIndexRow = 0
 
+    ///Override tag element for element. Default is `table`
     override var tag: String {
         get {
             return "table"
         }
     }
-
+    ///Override container element defaults is `true`
     override var container: Bool {
         get {
             return true
         }
     }
-
+    // MARK: - Functions
+    ///This method append a new eow element in row objects list
+    /// - Parameters:
+    ///     - titles: Array with titles `[String]`
+    ///     - aligns: optional array with aligns `[String]?`
+    ///     - class: optional array with css `class` `[String]?`
     public func tableHeaders(titles: [String], aligns: [String]? = nil, `class`: [String]? = nil) {
         thead = THead()
 
@@ -63,16 +71,25 @@ public final class Table: GenericElement {
         }
     }
 
+    ///This method append a new eow element in row objects list
+    /// - Parameters:
+    ///     - element: Generic Type `ElementProtocol` or `String`
+    ///     - attributes: This is a attr for select **attributes** `AttributeType...` CVarArg
+    /// Returns: `Td` a item to customize
     @discardableResult
     public func addRow(_ attributes: AttributeType...) -> Tr {
         let tr = Tr(attributes)
 
         rows.append(tr)
-
-        actualIndexRow += 1
         return tr
     }
 
+    ///This method append a new collumn element in row objects list
+    /// - **Attention** it is mandatory to create a row to add a column to it !!
+    /// - Parameters:
+    ///     - element: Generic Type `ElementProtocol` or `String`
+    ///     - attributes: This is a attr for select **attributes** `AttributeType...` CVarArg
+    /// Returns: `Td` a item to customize
     @discardableResult
     public func addInRow<T>(_ element: T, attributes: AttributeType...) -> Td {
         let td = Td(attributes)
@@ -87,6 +104,8 @@ public final class Table: GenericElement {
         return td
     }
 
+    /// Override method return tag and all elements
+    /// - Returns: `String` tag and all table elements
     public override func getString() -> String {
         var code = openTag()
         if let thead = thead {
@@ -102,13 +121,8 @@ public final class Table: GenericElement {
         return code
     }
 
+    ///Override generate methot do print elements
     public override func generate() {
-//        print(openTag())
-//        if objects.count > 0 {
-//            for obj in objects {
-//                obj.generate()
-//            }
-//        }
-//        print(closeTag())
+        print(getString())
     }
 }

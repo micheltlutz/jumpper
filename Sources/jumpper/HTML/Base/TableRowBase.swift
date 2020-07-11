@@ -24,16 +24,18 @@
 
 import Foundation
 
+/// This is a Base class for Table Row Elements
 public class TableRowBase: GenericElement {
+    ///Override container element for table row elements defaults is `true`
     override var container: Bool {
         get {
             return true
         }
     }
 
-    public func add<T>(_ element: T) {
-        guard let genericElement = element as? ElementProtocol else { return }
-
-        objects.append(genericElement)
+    ///This method append a new element in objects list
+    ///- Parameter element: `ElementProtocol`
+    public func add(_ element: ElementProtocol) {
+        objects.append(element)
     }
 }

@@ -24,7 +24,9 @@
 
 import Foundation
 
-class DD: LI {
+///Class for description list item
+public class DD: LI {
+    ///Override tag element for input elements. Default is `dd`
     override var tag: String {
         get {
             return "dd"

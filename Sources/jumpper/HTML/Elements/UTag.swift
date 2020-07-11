@@ -24,7 +24,9 @@
 
 import Foundation
 
-class U: TypographyElementBase {
+///Underline tag element class
+public final class U: TypographyElementBase {
+    ///Override tag element for element. Default is `u`
     override var tag: String {
         get {
             return "u"

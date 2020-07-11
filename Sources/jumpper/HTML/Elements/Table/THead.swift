@@ -24,7 +24,9 @@
 
 import Foundation
 
+///THead tag element class
 public final class THead: TableRowBase {
+    ///Override tag element for element. Default is `thead`
     override var tag: String {
         get {
             return "thead"

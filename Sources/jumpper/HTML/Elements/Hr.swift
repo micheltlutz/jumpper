@@ -24,16 +24,12 @@
 
 import Foundation
 
-final class Hr: GenericElement {
+///Hr tag element class
+public final class Hr: GenericElement {
+    ///Override tag element for element. Default is `hr`
     override var tag: String {
         get {
             return "hr"
-        }
-    }
-
-    override var container: Bool {
-        get {
-            return false
         }
     }
 }
