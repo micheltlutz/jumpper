@@ -3,16 +3,29 @@
     <br>
     <br>
     <a href="https://swift.org">
-        <img src="http://img.shields.io/badge/swift-5.1-brightgreen.svg" alt="Swift 5.1">
+        <img src="http://img.shields.io/badge/swift-5.2-brightgreen.svg" alt="Swift 5.2">
+    </a>
+    <a href="https://swift.org/package-manager">
+        <img src="https://img.shields.io/badge/swiftpm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
+    </a>
+    <img src="https://img.shields.io/badge/platforms-mac+linux-brightgreen.svg?style=flat" alt="Mac + Linux" />
+    
+    <img src="https://github.com/jumpper/jumpper/workflows/Swift/badge.svg?branch=develop" alt="jumpper tests" />
+    
+    <a href="https://raw.githubusercontent.com/jumpper/jumpper/develop/LICENSE">
+    	<img src="https://img.shields.io/github/license/micheltlutz/MLBootstra" alt="License" />
+    </a>
+    
+    <a href="https://codebeat.co/a/michel-anderson-lutz-teixeira/projects/github-com-jumpper-jumpper-develop">
+    	<img src="https://codebeat.co/badges/31d5d9f4-77af-4e51-9523-30f55ae9a069" alt="codebeat badge" />
     </a>
 </p>
 
+-----
 
-![jumpper tests](https://github.com/jumpper/jumpper/workflows/Swift/badge.svg?branch=develop)
-[![License](https://img.shields.io/github/license/micheltlutz/MLBootstrap)](https://raw.githubusercontent.com/jumpper/jumpper/develop/LICENSE)
-[![codebeat badge](https://codebeat.co/badges/31d5d9f4-77af-4e51-9523-30f55ae9a069)](https://codebeat.co/a/michel-anderson-lutz-teixeira/projects/github-com-jumpper-jumpper-develop)
+Welcome to **jumpper**. Is an open source framework, which is independent of other web frameworks or toolkits available on the market, such as Vapor, Kitura and Perfect. It can be used in conjunction with any of them and even alone. This shows how simple it is to build HTML pages using only **Swift**.
 
-The idea of this library is to facilitate the creation of static or dynamic pages using 100% of the Swift language.
+The idea of this library is to facilitate the creation of static or dynamic pages.
 
 About 10 years ago I developed a library similar to this one, but in another language, it streamlined many projects that I developed.
 
@@ -22,7 +35,7 @@ The project is still under development, feel free to collaborate and leave sugge
 
 I hope it will be useful for more developers.
 
-Let`s code.
+> Let`s code.
 
 
 # Documentation
