@@ -9,13 +9,10 @@
         <img src="https://img.shields.io/badge/swiftpm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
     </a>
     <img src="https://img.shields.io/badge/platforms-mac+linux-brightgreen.svg?style=flat" alt="Mac + Linux" />
-    
     <img src="https://github.com/jumpper/jumpper/workflows/Swift/badge.svg?branch=develop" alt="jumpper tests" />
-    
     <a href="https://raw.githubusercontent.com/jumpper/jumpper/develop/LICENSE">
     	<img src="https://img.shields.io/github/license/micheltlutz/MLBootstra" alt="License" />
     </a>
-    
     <a href="https://codebeat.co/a/michel-anderson-lutz-teixeira/projects/github-com-jumpper-jumpper-develop">
     	<img src="https://codebeat.co/badges/31d5d9f4-77af-4e51-9523-30f55ae9a069" alt="codebeat badge" />
     </a>
