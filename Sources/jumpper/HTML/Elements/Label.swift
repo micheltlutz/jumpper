@@ -24,7 +24,15 @@
 
 import Foundation
 
-///Label tag element class
+/**
+   Label tag element class
+
+    ### Usage Example: ###
+    ````
+     let labelComment = Label("Comment")
+     labelComment.addAttribute(("for", "commentField"))
+    ````
+*/
 public final class Label: TypographyElementBase {
     ///Override tag element for element. Default is `label`
     override var tag: String {

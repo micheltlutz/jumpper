@@ -24,7 +24,28 @@
 
 import Foundation
 
-///Form tag element class
+/**
+   Form tag element class
+
+    ### Usage Example: ###
+    ````
+     let form = Form((("method"),("POST")))
+     let fieldset = Fieldset()
+
+     let labelName = Label("Name")
+     labelName.addAttribute(("for", "nameField"))
+     fieldset.add(labelName)
+
+     let inputName = InputText("", id: "nameField", placeholder: "Name")
+     fieldset.add(inputName)
+
+     let labelAge = Label("Age Range")
+     labelAge.addAttribute(("for", "ageRangeField"))
+     fieldset.add(labelAge)
+
+     form.add(fieldset)
+    ````
+*/
 public final class Form: GenericElement {
     ///Override tag element for element. Default is `form`
     override var tag: String {

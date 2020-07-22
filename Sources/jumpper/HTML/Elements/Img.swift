@@ -24,7 +24,14 @@
 
 import Foundation
 
-///Img tag element class
+/**
+   Img tag element class
+
+    ### Usage Example: ###
+    ````
+     let img = Img("images/banner.png")
+    ````
+*/
 public final class Img: GenericElement {
     ///Override tag element for element. Default is `img`
     override var tag: String {

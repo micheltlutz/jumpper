@@ -24,7 +24,15 @@
 
 import Foundation
 
-/// A tag element class
+/**
+  A tag element class
+
+ ### Usage Example: ###
+ ````
+  let link = Link(("href","https://micheltlutz.me"), ("target","_blank"))
+  link.add("Developed by Michel Lutz - micheltlutz.me 🚀")
+ ````
+ */
 public final class A: ContainerElementBase {
     ///Override tag element for element. Default is `a`
     override var tag: String {

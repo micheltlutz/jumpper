@@ -24,7 +24,17 @@
 
 import Foundation
 
-///Class for description list
+/**
+   Class for description list
+
+    ### Usage Example: ###
+    ````
+     let dl = DL()
+     dl.add("Description list item 1")
+     let dd = DD("Description list item 1.1")
+     dl.add(dd)
+    ````
+*/
 public final class DL: UL {
     ///Override tag element for input elements. Default is `dl`
     override var tag: String {

@@ -24,7 +24,15 @@
 
 import Foundation
 
-///Blockquote tag element class
+/**
+    Blockquote tag element class
+
+ ### Usage Example: ###
+ ````
+ let description = Blockquote()
+ description.add("This is Typography blockquote demo.")
+ ````
+ */
 public final class Blockquote: ContainerElementBase {
     ///Override tag element for element. Default is `blockquote`
     override var tag: String {

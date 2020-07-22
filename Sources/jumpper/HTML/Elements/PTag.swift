@@ -24,7 +24,15 @@
 
 import Foundation
 
-///P tag element class
+/**
+   P tag element class
+
+    ### Usage Example: ###
+    ````
+     let paragraph = P()
+     paragraph.add("This is Typography Paragraph demo.")
+    ````
+*/
 public final class P: TypographyElementBase {
     ///Override tag element for element. Default is `p`
     override var tag: String {

@@ -24,7 +24,16 @@
 
 import Foundation
 
-///Class for Unordered list
+/**
+   Class for Unordered list
+
+    ### Usage Example: ###
+    ````
+     let ul = UL()
+     ul.add("Unordered list item 1")
+     ul.add("Unordered list item 2")
+    ````
+*/
 public class UL: GenericElement {
     ///Override tag element for input elements. Default is `ul`
     override var tag: String {

@@ -24,7 +24,15 @@
 
 import Foundation
 
-///Div tag element class
+/**
+   Div tag element class
+
+    ### Usage Example: ###
+    ````
+     let div = Div(("class", "float-right"))
+     div.add("Test Div")
+    ````
+*/
 public final class Div: ContainerElementBase {
     ///Override tag element for element. Default is `div`
     override var tag: String {

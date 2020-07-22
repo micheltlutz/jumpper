@@ -24,7 +24,14 @@
 
 import Foundation
 
-///This class define a Textarea element
+/**
+   This class define a Textarea element
+
+    ### Usage Example: ###
+    ````
+    Textarea(("placeholder", "Hi Mike …"), ("id", "commentField"))
+    ````
+*/
 public final class Textarea: GenericElement {
     ///Override tag element for option. Default is `option`
     override var tag: String {

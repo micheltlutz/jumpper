@@ -24,7 +24,14 @@
 
 import Foundation
 
-///Small tag element class
+/**
+   Small tag element class
+
+    ### Usage Example: ###
+    ````
+     Small("Text Small")
+    ````
+*/
 public class Small: TypographyElementBase {
     ///Override tag element for element. Default is `small`
     override var tag: String {

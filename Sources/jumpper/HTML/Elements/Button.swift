@@ -24,7 +24,36 @@
 
 import Foundation
 
-///Button tag element class
+/**
+   Button tag element class
+
+### Usage Example: ###
+````
+ let section = Section(("id","buttons"), ("class","container"))
+
+ let title = H3("Buttons")
+ title.addAttribute(("class","title"))
+ section.add(title)
+
+ let description = Blockquote()
+ description.add("This is Buttons demo.")
+ section.add(description)
+
+ let linkButton = Link(("href","#"), ("class","button"))
+ linkButton.add("Default Button")
+ section.add(linkButton)
+
+ let button = Button("Outlined Button")
+ button.addAttribute(("class","button button-outline") )
+ section.add(button)
+ 
+ let inputSubmit = Submit("Clear Button")
+ inputSubmit.addAttribute(("class","button button-clear") )
+ section.add(section.add(inputSubmit))
+
+ return section
+````
+*/
 public class Button: TypographyElementBase {
     ///Override tag element for element. Default is `button`
     override var tag: String {

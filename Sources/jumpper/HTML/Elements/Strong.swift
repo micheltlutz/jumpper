@@ -24,7 +24,14 @@
 
 import Foundation
 
-///Strong tag element class
+/**
+   Strong tag element class
+
+    ### Usage Example: ###
+    ````
+     Strong("Text Strong")
+    ````
+*/
 public final class Strong: TypographyElementBase {
     ///Override tag element for element. Default is `strong`
     override var tag: String {

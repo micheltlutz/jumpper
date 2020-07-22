@@ -24,7 +24,14 @@
 
 import Foundation
 
-///Emphasis tag element class
+/**
+   Emphasis tag element class
+
+    ### Usage Example: ###
+    ````
+     Em("Emphasis")
+    ````
+*/
 public final class Em: TypographyElementBase {
     ///Override tag element for element. Default is `em`
     override var tag: String {

@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Volumes/MARK5_DADOS/Vapor/jumpper-project/jumpper/Sources/jumpper/jumpper.swift",
+      "line": 1,
+      "symbol": "jumpper",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/MARK5_DADOS/Vapor/jumpper-project/jumpper/Sources/jumpper/jumpper.swift",
+      "line": 2,
+      "symbol": "jumpper.version",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Volumes/MARK5_DADOS/Vapor/jumpper-project/jumpper"
+}

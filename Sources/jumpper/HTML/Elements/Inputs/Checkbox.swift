@@ -24,7 +24,14 @@
 
 import Foundation
 
-/// Class define a input type checkbox
+/**
+   Class define a input type checkbox
+
+    ### Usage Example: ###
+    ````
+     Checkbox("confirmField", id: "confirmField")
+    ````
+*/
 public final class Checkbox: InputElementBase {
     // MARK: - Initialization
     /// Default initializer checkbox element

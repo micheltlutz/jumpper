@@ -24,7 +24,14 @@
 
 import Foundation
 
-///Br tag element class
+/**
+   Br tag element class
+
+### Usage Example: ###
+````
+ Br()
+````
+*/
 public final class Br: GenericElement {
     ///Override tag element for element. Default is `br`
     override var tag: String {

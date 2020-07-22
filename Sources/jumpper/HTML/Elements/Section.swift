@@ -24,7 +24,15 @@
 
 import Foundation
 
-///Section tag element class
+/**
+   Section tag element class
+
+    ### Usage Example: ###
+    ````
+     let section = Section(("id","typography"), ("class","container"))
+     section.add(H3("Typography"))
+    ````
+*/
 public final class Section: ContainerElementBase {
     ///Override tag element for element. Default is `section`
     override var tag: String {

@@ -25,7 +25,14 @@
 import Foundation
 
 // MARK: - H1
-///H1 tag element class
+/**
+   H1 tag element class
+
+    ### Usage Example: ###
+    ````
+     H1("Heading H1")
+    ````
+*/
 public final class H1: TypographyElementBase {
     ///Override tag element for element. Default is `h1`
     override var tag: String {
@@ -36,7 +43,14 @@ public final class H1: TypographyElementBase {
 }
 
 // MARK: - H2
-///H2 tag element class
+/**
+   H2 tag element class
+
+    ### Usage Example: ###
+    ````
+     H2("Heading H2")
+    ````
+*/
 public final class H2: TypographyElementBase {
     ///Override tag element for element. Default is `h2`
     override var tag: String {
@@ -47,7 +61,14 @@ public final class H2: TypographyElementBase {
 }
 
 // MARK: - H3
-///H3 tag element class
+/**
+   H3 tag element class
+
+    ### Usage Example: ###
+    ````
+     H3("Heading H3")
+    ````
+*/
 public final class H3: TypographyElementBase {
     ///Override tag element for element. Default is `h3`
     override var tag: String {
@@ -58,7 +79,14 @@ public final class H3: TypographyElementBase {
 }
 
 // MARK: - H4
-///H4 tag element class
+/**
+   H4 tag element class
+
+    ### Usage Example: ###
+    ````
+     H4("Heading H4")
+    ````
+*/
 public final class H4: TypographyElementBase {
     ///Override tag element for element. Default is `h4`
     override var tag: String {
@@ -69,7 +97,14 @@ public final class H4: TypographyElementBase {
 }
 
 // MARK: - H5
-///H5 tag element class
+/**
+   H5 tag element class
+
+    ### Usage Example: ###
+    ````
+     H5("Heading H5")
+    ````
+*/
 public final class H5: TypographyElementBase {
     ///Override tag element for element. Default is `h5`
     override var tag: String {
@@ -80,7 +115,14 @@ public final class H5: TypographyElementBase {
 }
 
 // MARK: - H6
-///H6 tag element class
+/**
+   H6 tag element class
+
+    ### Usage Example: ###
+    ````
+     H6("Heading H6")
+    ````
+*/
 public final class H6: TypographyElementBase {
     ///Override tag element for element. Default is `h6`
     override var tag: String {

@@ -24,7 +24,15 @@
 
 import Foundation
 
-///Main tag element class
+/**
+   Main tag element class
+
+    ### Usage Example: ###
+    ````
+     let main = Main(("class","wrapper"))
+     main.add(Hr())
+    ````
+*/
 public final class Main: ContainerElementBase {
     ///Override tag element for element. Default is `blockquote`
     override var tag: String {
