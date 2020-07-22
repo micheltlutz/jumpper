@@ -17,7 +17,7 @@ public class ContainerElementBase: GenericElement {
     }
     ///This method append a new element in objects list
     /// - Parameter element: Generic Type `ElementProtocol` or `String`
-    func add<T>(_ element: T) {
+    public func add<T>(_ element: T) {
         if let textElement = element as? String {
             let text = factoryTextWith(textElement)
 
