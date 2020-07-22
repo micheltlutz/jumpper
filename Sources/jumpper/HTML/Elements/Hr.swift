@@ -24,7 +24,14 @@
 
 import Foundation
 
-///Hr tag element class
+/**
+   Hr tag element class
+
+    ### Usage Example: ###
+    ````
+     Hr()
+    ````
+*/
 public final class Hr: GenericElement {
     ///Override tag element for element. Default is `hr`
     override var tag: String {

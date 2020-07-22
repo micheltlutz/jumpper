@@ -24,7 +24,25 @@
 
 import Foundation
 
-///Fieldset tag element class
+/**
+   Fieldset tag element class
+
+    ### Usage Example: ###
+    ````
+     let fieldset = Fieldset()
+
+     let labelName = Label("Name")
+     labelName.addAttribute(("for", "nameField"))
+     fieldset.add(labelName)
+
+     let inputName = InputText("", id: "nameField", placeholder: "Name")
+     fieldset.add(inputName)
+     
+     let labelAge = Label("Age Range")
+     labelAge.addAttribute(("for", "ageRangeField"))
+     fieldset.add(labelAge)
+    ````
+*/
 final class Fieldset: GenericElement {
     ///Override tag element for element. Default is `fieldset`
     override var tag: String {

@@ -27,7 +27,17 @@ import Foundation
 ///Define a `typealias` for SelectOptionsType
 public typealias SelectOptionsType = [[String: CustomStringConvertible]]
 
-///This class define a select element
+/**
+   This class define a select element
+
+    ### Usage Example: ###
+    ````
+    let select = Select([["0-13": "0-13"],
+                        ["14-17": "14-17"],
+                        ["18-23": "18-23"]],
+                        attr:("id", "ageRangeField"))
+    ````
+*/
 public final class Select: GenericElement {
     ///Override tag element for option. Default is `option`
     override var tag: String {

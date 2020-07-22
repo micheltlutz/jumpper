@@ -24,7 +24,32 @@
 
 import Foundation
 
-/// Table html tag class element
+/**
+   Table html tag class element
+
+    ### Usage Example: ###
+    ````
+     let table = Table()
+     table.tableHeaders(titles: ["Name", "Age", "Height", "Location"])
+     //table.tableHeaders(titles: ["Name", "Age", "Height", "Location"], aligns: ["center", "left", "left", "left"]) // Align Headers
+
+     table.addRow()
+     table.addInRow("Arthurito Thompson")
+     table.addInRow("52")
+     table.addInRow("1,30")
+     table.addInRow("Torresmo, RS")
+     table.addRow()
+     table.addInRow("Stephen Curry")
+     table.addInRow("27")
+     table.addInRow("1,91")
+     table.addInRow("Akron, OH")
+     table.addRow()
+     table.addInRow("Klay Thompson")
+     table.addInRow("25")
+     table.addInRow("2,01")
+     table.addInRow("Los Angeles, CA")
+    ````
+*/
 public final class Table: GenericElement {
     ///Object with table body. tr, td: `TBody`
     private let tbody: TBody = TBody()

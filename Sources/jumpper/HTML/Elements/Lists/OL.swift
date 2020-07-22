@@ -24,7 +24,16 @@
 
 import Foundation
 
-///Class for ordered list
+/**
+   Class for ordered list
+
+    ### Usage Example: ###
+    ````
+     let ol = OL()
+     ol.add("Ordered list item 1")
+     ol.add("Ordered list item 2")
+    ````
+*/
 public final class OL: UL {
     ///Override tag element for input elements. Default is `ol`
     override var tag: String {

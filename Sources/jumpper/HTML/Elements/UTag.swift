@@ -24,7 +24,14 @@
 
 import Foundation
 
-///Underline tag element class
+/**
+   Underline tag element class
+
+    ### Usage Example: ###
+    ````
+     U("Underline Text")
+    ````
+*/
 public final class U: TypographyElementBase {
     ///Override tag element for element. Default is `u`
     override var tag: String {

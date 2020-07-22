@@ -24,7 +24,14 @@
 
 import Foundation
 
-///Make a simple text Element to append in others elements
+/**
+   Make a simple text Element to append in others elements
+
+    ### Usage Example: ###
+    ````
+     Text("Simple Text")
+    ````
+*/
 public final class Text: ElementProtocol {
     ///Text value `String`
     private let value: String

@@ -24,7 +24,15 @@
 
 import Foundation
 
-///This class define a submit element
+/**
+   This class define a submit element
+
+    ### Usage Example: ###
+    ````
+    let inputSubmit = Submit("Send")
+    inputSubmit.addAttribute(("class","button-primary"))
+    ````
+*/
 public class Submit: InputElementBase {
     // MARK: - Initialization
     /// Default initializer input submit element

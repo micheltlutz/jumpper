@@ -24,7 +24,14 @@
 
 import Foundation
 
-/// Class define a input type text
+/**
+   Class define a input type text
+
+    ### Usage Example: ###
+    ````
+    InputText("value", id: "nameField", placeholder: "Name")
+    ````
+*/
 public final class InputText: InputElementBase {
     // MARK: - Initialization
     /// Default initializer input text element
