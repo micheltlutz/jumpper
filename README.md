@@ -44,6 +44,8 @@ I hope it will be useful for more developers.
 > Need Leaf installed
 
 ```swift 
+import jumpper
+
 router.get { req -> Future<View> in
      let div = Div()
      div.add("My first div with jumpper")
