@@ -43,7 +43,7 @@ import Foundation
      fieldset.add(labelAge)
     ````
 */
-final class Fieldset: GenericElement {
+public final class Fieldset: GenericElement {
     ///Override tag element for element. Default is `fieldset`
     override var tag: String {
         get {
