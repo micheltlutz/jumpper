@@ -9,6 +9,6 @@ final class FactoryElementsTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testElement", testElement),
+        ("testElement", testElement)
     ]
 }

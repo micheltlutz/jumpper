@@ -11,6 +11,6 @@ final class CompositeElementsTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testElement", testElement),
+        ("testElement", testElement)
     ]
 }
