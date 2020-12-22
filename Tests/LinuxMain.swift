@@ -20,6 +20,8 @@ import LabelTests
 import MainTests
 import PreTests
 import PTests
+import CompositeElementsTests
+import FactoryElementsTests
 
 var tests = [XCTestCaseEntry]()
 tests += DivTests.allTests()
@@ -44,4 +46,6 @@ tests += PreTests.allTests()
 tests += PTests.allTests()
 tests += SectionTest.allTests()
 tests += TextTest.allTests()
+tests += CompositeElementsTests.allTests()
+tests += FactoryElementsTests.allTests()
 XCTMain(tests)

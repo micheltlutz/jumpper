@@ -44,7 +44,7 @@ public class TypographyElementBase: GenericElement {
     /// - Parameter element: Generic Type `ElementProtocol` or `String`
     public func add<T>(_ element: T) {
         if let textElement = element as? String {
-            let text = factoryTextWith(textElement)
+            let text = FactoryElements.textWith(textElement)
 
             objects.append(text)
         } else {
@@ -52,12 +52,5 @@ public class TypographyElementBase: GenericElement {
 
             objects.append(genericElement)
         }
-    }
-
-    /// This method create a `Text` element to user when element T String is passed on add method
-    /// - Parameter text: `String` to create `Text` element
-    /// - Returns: `Text` Element with string passed
-    private func factoryTextWith(_ text: String) -> Text {
-        return Text(text)
     }
 }
