@@ -27,6 +27,8 @@ import Foundation
 public final class CompositeElements: ElementProtocol {
     public var objects: [ElementProtocol] = [ElementProtocol]()
 
+    public init() {}
+
     ///This method append a new element in objects list
     /// - Parameter element: Generic Type `ElementProtocol` or `String`
     public func add<T>(_ element: T) {
