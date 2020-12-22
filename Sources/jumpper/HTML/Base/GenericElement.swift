@@ -78,12 +78,12 @@ public class GenericElement: ElementProtocol {
 
         if objects.count > 0 {
             for obj in objects {
-                code += obj.getString()
+                code.append(obj.getString())
             }
         }
 
         if container {
-            code += closeTag()
+            code.append(closeTag())
         }
 
         return code
