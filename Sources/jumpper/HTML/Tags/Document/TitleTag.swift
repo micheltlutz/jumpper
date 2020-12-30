@@ -44,7 +44,7 @@ public final class Title: ContainerElementBase {
     /// Default initializer
     /// - Parameters:
     ///     - text: This is a **text** `String`
-    public override init(_ text: String) {
+    public init(_ text: String) {
         super.init()
 
         add(text)

@@ -33,7 +33,7 @@ import Foundation
     body.add(/* Any Element*/)
     ````
 */
-public final class Html: ContainerElementBase {
+public final class Body: ContainerElementBase {
     ///Override tag element for element. Default is `body`
     override var tag: String {
         get {

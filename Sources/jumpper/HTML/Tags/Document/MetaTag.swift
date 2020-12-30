@@ -44,7 +44,7 @@ public class Meta: GenericElement {
     /// Default initializer 
     /// - Parameters:
     ///     - attributes: This is a **attributes** `AttributeType...` CVarArg
-    public init(_ attributes: AttributeType...) {
+    public override init(_ attributes: AttributeType...) {
         super.init(attributes)
     }
 }
