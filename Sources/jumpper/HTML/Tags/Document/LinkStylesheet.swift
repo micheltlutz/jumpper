@@ -25,30 +25,22 @@
 import Foundation
 
 /**
-   This class define a Textarea element
+   Img tag element class
 
     ### Usage Example: ###
     ````
-    Textarea(("placeholder", "Hi Mike …"), ("id", "commentField"))
+     let linkCssTag = LinkStylesheet("/styles/milligram.min.css")
     ````
 */
-public final class Textarea: GenericElement {
-    ///Override tag element for option. Default is `option`
-    override var tag: String {
-        get {
-            return "textarea"
-        }
-    }
-    ///Override container element for table row elements defaults is `true`
-    override var container: Bool {
-        get {
-            return true
-        }
-    }
-    /// This method add a text in textarea element
+public class LinkStylesheet: Link {
+    // MARK: - Initialization
+    /// Default initializer element
     /// - Parameters:
-    ///     - text: This is a text for select **text** `String`
-    public func add(_ text: String) {
-        objects.append(Text(text))
+    ///     - href: This is a src attribute for link **href** `String`
+    ///     - attributes: This is a attr for select **attributes** `AttributeType...` CVarArg
+    public init(_ href: String) {
+        super.init(href)
+
+        addAttribute(("rel", "stylesheet"))
     }
 }
