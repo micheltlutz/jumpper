@@ -34,7 +34,11 @@ import Foundation
     ````
 */
 public final class Doctype: ElementProtocol {
-    private let tag = "<!DOCTYPE html>"
+    private let tag: String
+
+    public init() {
+        tag = "<!DOCTYPE html>"
+    }
 
     public func getString() -> String {
         return tag
