@@ -25,30 +25,26 @@
 import Foundation
 
 /**
-   This class define a Textarea element
+    DOCTYPE tag element class
 
     ### Usage Example: ###
     ````
-    Textarea(("placeholder", "Hi Mike …"), ("id", "commentField"))
+    let doctype = Doctype()
+    doctype.getString() // or doctype.generate()
     ````
 */
-public final class Textarea: GenericElement {
-    ///Override tag element for option. Default is `option`
-    override var tag: String {
-        get {
-            return "textarea"
-        }
+public final class Doctype: ElementProtocol {
+    private let tag: String
+
+    public init() {
+        tag = "<!DOCTYPE html>"
     }
-    ///Override container element for table row elements defaults is `true`
-    override var container: Bool {
-        get {
-            return true
-        }
+
+    public func getString() -> String {
+        return tag
     }
-    /// This method add a text in textarea element
-    /// - Parameters:
-    ///     - text: This is a text for select **text** `String`
-    public func add(_ text: String) {
-        objects.append(Text(text))
+
+    public func generate() {
+        print(tag)
     }
 }

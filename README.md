@@ -17,7 +17,9 @@
     	<img src="https://codebeat.co/badges/31d5d9f4-77af-4e51-9523-30f55ae9a069" alt="codebeat badge" />
     </a>
 </p>
-
+<p align="center">
+<a href="https://www.buymeacoffee.com/micheltlutz" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+</p>
 -----
 
 Welcome to **jumpper**. Is an open source framework, which is independent of other web frameworks or toolkits available on the market, such as Vapor, Kitura and Perfect. It can be used in conjunction with any of them and even alone. This shows how simple it is to build HTML pages using only **Swift**.
