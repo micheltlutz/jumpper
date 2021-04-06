@@ -15,10 +15,31 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/michel/Vapor/jumpper-project/jumpper/Sources/jumpper/HTML/Helpers/CompositeElements.swift",
+      "line": 30,
+      "symbol": "CompositeElements.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/michel/Vapor/jumpper-project/jumpper/Sources/jumpper/HTML/Helpers/FactoryElements.swift",
       "line": 27,
       "symbol": "FactoryElements",
       "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/Vapor/jumpper-project/jumpper/Sources/jumpper/HTML/Tags/Document/Doctype.swift",
+      "line": 37,
+      "symbol": "Doctype.tag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/Vapor/jumpper-project/jumpper/Sources/jumpper/HTML/Tags/Document/Doctype.swift",
+      "line": 39,
+      "symbol": "Doctype.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
