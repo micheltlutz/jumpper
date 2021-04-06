@@ -25,7 +25,7 @@
 import Foundation
 
 /**
-   Div tag element class
+    DOCTYPE tag element class
 
     ### Usage Example: ###
     ````

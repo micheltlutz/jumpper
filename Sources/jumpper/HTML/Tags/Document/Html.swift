@@ -25,19 +25,17 @@
 import Foundation
 
 /**
-   Div tag element class
+   Html tag element class
 
     ### Usage Example: ###
     ````
-    let html = HTML()
+    let html = Html()
     html.add(/* Any Element*/)
     ````
 */
 public final class Html: ContainerElementBase {
-    ///Override tag element for element. Default is `html`
+    /// Override tag element. Default is `html`
     override var tag: String {
-        get {
-            return "html"
-        }
+        return "html"
     }
 }

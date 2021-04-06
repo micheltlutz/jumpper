@@ -25,19 +25,17 @@
 import Foundation
 
 /**
-    Blockquote tag element class
+    title tag element class
 
- ### Usage Example: ###
- ````
- let pageTitle = Title("This is Page.")
- ````
+    ### Usage Example: ###
+    ````
+     let pageTitle = Title("This is Page.")
+    ````
  */
 public final class Title: ContainerElementBase {
-    ///Override tag element for element. Default is `blockquote`
+    /// Override tag element. Default is `title`
     override var tag: String {
-        get {
-            return "title"
-        }
+        return "title"
     }
 
     // MARK: - Initialization

@@ -25,7 +25,7 @@
 import Foundation
 
 /**
-   Img tag element class
+    Meta tag element class
 
     ### Usage Example: ###
     ````
@@ -33,11 +33,9 @@ import Foundation
     ````
 */
 public class Meta: GenericElement {
-    ///Override tag element for element. Default is `meta`
+    /// Override tag element for element. Default is `meta`
     override var tag: String {
-        get {
-            return "meta"
-        }
+        return "meta"
     }
 
     // MARK: - Initialization

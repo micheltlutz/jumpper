@@ -25,7 +25,7 @@
 import Foundation
 
 /**
-   Img tag element class
+    Link stylesheet  tag element class
 
     ### Usage Example: ###
     ````
@@ -37,7 +37,7 @@ public class LinkStylesheet: Link {
     /// Default initializer element
     /// - Parameters:
     ///     - href: This is a src attribute for link **href** `String`
-    ///     - attributes: This is a attr for select **attributes** `AttributeType...` CVarArg
+    ///     - attributes: This is a attr **attributes** `AttributeType...` CVarArg
     public init(_ href: String) {
         super.init(href)
 

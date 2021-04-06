@@ -25,7 +25,7 @@
 import Foundation
 
 /**
-   Div tag element class
+    Body tag element class
 
     ### Usage Example: ###
     ````
@@ -34,10 +34,8 @@ import Foundation
     ````
 */
 public final class Body: ContainerElementBase {
-    ///Override tag element for element. Default is `body`
+    /// Override tag element. Default is `body`
     override var tag: String {
-        get {
-            return "body"
-        }
+        return "body"
     }
 }

@@ -25,12 +25,12 @@
 import Foundation
 
 /**
-   This class define a Textarea element
+    This class define a Script element
 
     ### Usage Example: ###
     ````
     let script = Script()
-    textArea.add("var myJsVar = 1")
+    script.add("var myJsVar = 1")
 
     let script = Script(("src","myScript.js"))
     ````
@@ -38,17 +38,15 @@ import Foundation
 public final class Script: GenericElement {
     ///Override tag element for option. Default is `script`
     override var tag: String {
-        get {
-            return "script"
-        }
+        return "script"
     }
-    ///Override container element for table row elements defaults is `true`
+    ///Override container element defaults is `true`
     override var container: Bool {
         get {
             return true
         }
     }
-    /// This method add a text in textarea element
+    /// This method add a text in script body element
     /// - Parameters:
     ///     - text: This is a content for tag  **text** `String`
     public func add(_ text: String) {

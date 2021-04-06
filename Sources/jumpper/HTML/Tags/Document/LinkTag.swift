@@ -25,7 +25,7 @@
 import Foundation
 
 /**
-   Img tag element class
+    link tag element class
 
     ### Usage Example: ###
     ````
@@ -35,16 +35,14 @@ import Foundation
 public class Link: GenericElement {
     ///Override tag element for element. Default is `link`
     override var tag: String {
-        get {
-            return "link"
-        }
+        return "link"
     }
 
     // MARK: - Initialization
     /// Default initializer element
     /// - Parameters:
     ///     - href: This is a src attribute for link **href** `String`
-    ///     - attributes: This is a attr for select **attributes** `AttributeType...` CVarArg
+    ///     - attributes: This is a attr **attributes** `AttributeType...` CVarArg
     public init(_ href: String, attributes: AttributeType...) {
         super.init(attributes)
 

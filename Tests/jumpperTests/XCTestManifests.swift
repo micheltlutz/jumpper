@@ -6,7 +6,7 @@ public func allTests() -> [XCTestCaseEntry] {
         testCase(BlockquoteTests.allTests),
         testCase(BrTests.allTests),
         testCase(ButtonTests.allTests),
-        testCase(LinkTests.allTests),
+        testCase(ATagTests.allTests),
         testCase(CanvasTests.allTests),
         testCase(CenterTests.allTests),
         testCase(CodeTests.allTests),
@@ -26,7 +26,15 @@ public func allTests() -> [XCTestCaseEntry] {
         testCase(SectionTests.allTests),
         testCase(TextTests.allTests),
         testCase(CompositeElementsTests.allTests),
-        testCase(FactoryElementsTests.allTests)
+        testCase(FactoryElementsTests.allTests),
+        testCase(TextareaTests.allTests),
+        testCase(BodyTests.allTests),
+        testCase(HeadTests.allTests),
+        testCase(HtmlTests.allTests),
+        testCase(LinkTests.allTests),
+        testCase(MetaTests.allTests),
+        testCase(ScriptTests.allTests),
+        testCase(TitleTests.allTests)
     ]
 }
 #endif

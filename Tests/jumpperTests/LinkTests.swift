@@ -3,17 +3,16 @@ import XCTest
 
 final class LinkTests: XCTestCase {
     func testElement() {
-        let link = A(("href", "#"))
-        link.add("My Link")
+        let element = Link("/styles/milligram.min.css")
 
-        XCTAssertEqual(link.getString(), "<a href='#'>My Link</a>")
+        XCTAssertEqual(element.getString(), "<link href='/styles/milligram.min.css'>")
     }
 
     func testElementAttr() {
-        let link = A(("href", "#"), ("class", "class-link"))
-        link.add("My Link")
+        let element = Link("/styles/milligram.min.css", attributes: ("rel", "stylesheet"))
+        element.addAttribute(("media", "all"))
 
-        XCTAssertEqual(link.getString(), "<a href='#' class='class-link'>My Link</a>")
+        XCTAssertEqual(element.getString(), "<link rel='stylesheet' href='/styles/milligram.min.css' media='all'>")
     }
 
     static var allTests = [
