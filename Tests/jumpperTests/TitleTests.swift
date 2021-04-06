@@ -20,5 +20,3 @@ final class TitleTests: XCTestCase {
         ("testElementAttr", testElementAttr)
     ]
 }
-
-
