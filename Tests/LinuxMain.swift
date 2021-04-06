@@ -1,7 +1,7 @@
 import XCTest
 
 import DivTests
-import LinkTests
+import ATagTests
 import BlockquoteTests
 import BrTests
 import ButtonTests
@@ -30,6 +30,8 @@ import LinkTests
 import MetaTests
 import ScriptTests
 import TitleTests
+import HeaderTests
+import FooterTests
 
 var tests = [XCTestCaseEntry]()
 tests += DivTests.allTests()
@@ -64,5 +66,7 @@ tests += LinkTests.allTests()
 tests += MetaTests.allTests()
 tests += ScriptTests.allTests()
 tests += TitleTests.allTests()
+tests += HeaderTests.allTests()
+tests += FooterTests.allTests()
 
 XCTMain(tests)

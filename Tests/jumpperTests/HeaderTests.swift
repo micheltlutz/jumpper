@@ -1,8 +1,22 @@
-//
-//  File.swift
-//  
-//
-//  Created by Michel Anderson Lutz Teixeira on 06/04/21.
-//
+import XCTest
+@testable import jumpper
 
-import Foundation
+final class HeaderTests: XCTestCase {
+    func testElement() {
+        let element = Header()
+
+        XCTAssertEqual(element.getString(), "<header></header>")
+    }
+
+    func testElementAttr() {
+        let element = Header(("class", "sameClass"))
+        element.addAttribute(("id", "header"))
+
+        XCTAssertEqual(element.getString(), "<header class='sameClass' id='header'></header>")
+    }
+
+    static var allTests = [
+        ("testElement", testElement),
+        ("testElementAttr", testElementAttr)
+    ]
+}

@@ -13,7 +13,6 @@ final class HeadTests: XCTestCase {
         element.addAttribute(("id", "head"))
         element.add(Title("My Site"))
 
-
         XCTAssertEqual(element.getString(), "<head class='sameClass' id='head'><title>My Site</title></head>")
     }
 

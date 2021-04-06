@@ -25,7 +25,7 @@
 import Foundation
 
 /**
-   Div tag element class
+    footer tag element class
 
     ### Usage Example: ###
     ````
@@ -34,10 +34,8 @@ import Foundation
     ````
 */
 public final class Footer: ContainerElementBase {
-    ///Override tag element for element. Default is `footer`
+    /// Override tag element. Default is `footer`
     override var tag: String {
-        get {
-            return "footer"
-        }
+        return "footer"
     }
 }

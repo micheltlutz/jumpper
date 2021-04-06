@@ -40,11 +40,9 @@ public final class Script: GenericElement {
     override var tag: String {
         return "script"
     }
-    ///Override container element defaults is `true`
+    /// Override container element defaults is `true`
     override var container: Bool {
-        get {
-            return true
-        }
+        return true
     }
     /// This method add a text in script body element
     /// - Parameters:
