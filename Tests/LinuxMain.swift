@@ -32,6 +32,7 @@ import ScriptTests
 import TitleTests
 import HeaderTests
 import FooterTests
+import RadioTests
 
 var tests = [XCTestCaseEntry]()
 tests += DivTests.allTests()
@@ -68,5 +69,6 @@ tests += ScriptTests.allTests()
 tests += TitleTests.allTests()
 tests += HeaderTests.allTests()
 tests += FooterTests.allTests()
+tests += RadioTests.allTests()
 
 XCTMain(tests)

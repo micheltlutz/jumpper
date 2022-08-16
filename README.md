@@ -41,12 +41,46 @@ I hope it will be useful for more developers.
 
 - [Online Doc](http://jumpper-docs.micheltlutz.me)
 
+# Using in Package.swift
+
+```swift
+// swift-tools-version:5.6
+import PackageDescription
+
+let package = Package(
+    name: "assessment",
+    platforms: [
+       .macOS(.v12)
+    ],
+    dependencies: [
+        .package(url: "https://github.com/vapor/vapor.git", from: "4.0.0"),
+        .package(url: "https://github.com/jumpper/jumpper.git", from: "0.0.9")
+    ],
+    targets: [
+        .target(
+            name: "App",
+            dependencies: [
+                .product(name: "Vapor", package: "vapor"),
+                .product(name: "jumpper", package: "jumpper")
+            ]
+        ),
+        .executableTarget(name: "Run", dependencies: [.target(name: "App")]),
+        .testTarget(name: "AppTests", dependencies: [
+            .target(name: "App"),
+            .product(name: "XCTVapor", package: "vapor"),
+        ])
+    ]
+)
+```
+
 # Vapor usage
 
-> Need Leaf installed
+## Need Leaf installed
 
 ```swift 
 import jumpper
+import Leaf
+import Vapor
 
 router.get { req -> Future<View> in
      let div = Div()
@@ -54,6 +88,31 @@ router.get { req -> Future<View> in
      return try req.view().render("base", ["title": "Hello jumpper", "body": div.getString()])
 }
 ```
+
+## Without Leaf
+
+```swift 
+import jumpper
+import Vapor
+
+
+protocol JumpperPageProtocol {
+    func render() throws -> EventLoopFuture<Response>
+}
+
+public final class IndexPage: JumpperPageProtocol {
+    // MARK: - Render
+
+    public func render() throws -> EventLoopFuture<Response> {
+        let response = Response()
+        
+        let divC = Div()
+        response.body = .init(string: divC.getString())
+        return response.encodeResponse(status: .ok, headers: HTTPHeaders.init([("Content-Type", "text/html; charset=UTF-8")]), for: request)
+    }
+}
+```
+
 # jumpper vapor project demo
 
 - [jumpper-demo](https://github.com/jumpper/jumpper-demo)
