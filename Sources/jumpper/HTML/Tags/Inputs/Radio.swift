@@ -25,29 +25,29 @@
 import Foundation
 
 /**
-   Class define a input type text
+ Class define a input type text
 
-    ### Usage Example: ###
-    ````
-    InputText("value", id: "nameField", placeholder: "Name")
-    ````
-*/
-public final class InputText: InputElementBase {
+ ### Usage Example: ###
+ ````
+ Radio("value", id: "nameField", name: "Name")
+ ````
+ */
+public final class Radio: InputElementBase {
     // MARK: - Initialization
-    /// Default initializer input text element
+    /// Default initializer input radio element
     /// - Parameters:
-    ///     - value: This is a value for input **value** `String`
-    ///     - id: This is a id for input **id** `String?`
-    ///     - placeholder: This is a placeholder for input **placeholder** `String?`
-    public init(_ value: String, id: String?, placeholder: String?) {
-        super.init(value, type: "text")
-
-        if let placeholder = placeholder {
-            addAttribute(("placeholder", placeholder))
-        }
+    ///     - value: This is a value for radio **value** `String`
+    ///     - id: This is a id for radio **id** `String?`
+    ///     - name: This is a name for name **name** `String?`
+    public init(_ value: String, id: String?, name: String?) {
+        super.init(value, type: "radio")
 
         if let id = id {
             addAttribute(("id", id))
+        }
+
+        if let name = name {
+            addAttribute(("name", name))
         }
     }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>InputElementBase Class Reference</title>
+    <title>Radio Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/InputElementBase" class="dashAnchor"></a>
-    <a title="InputElementBase Class Reference"></a>
+    <a name="//apple_ref/swift/Class/Radio" class="dashAnchor"></a>
+    <a title="Radio Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        InputElementBase Class Reference
+        Radio Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -273,76 +273,21 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>InputElementBase</h1>
+            <h1>Radio</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">InputElementBase</span> <span class="p">:</span> <span class="kt"><a href="../Classes/GenericElement.html">GenericElement</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Radio</span> <span class="p">:</span> <span class="kt"><a href="../Classes/InputElementBase.html">InputElementBase</a></span></code></pre>
 
                 </div>
               </div>
-            <p>This is a Base class for Input Elements</p>
+            <p>Class define a input type text</p>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="kt">Radio</span><span class="p">(</span><span class="s">"value"</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="s">"nameField"</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="s">"Name"</span><span class="p">)</span>
+</code></pre>
 
           </section>
           <section class="section task-group-section">
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7jumpper16InputElementBaseC3tagSSvp"></a>
-                    <a name="//apple_ref/swift/Property/tag" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7jumpper16InputElementBaseC3tagSSvp">tag</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Override tag element for input elements. Default is <code>input</code></p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">override</span> <span class="k">var</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7jumpper16InputElementBaseC04formC0Sbvp"></a>
-                    <a name="//apple_ref/swift/Property/formElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7jumpper16InputElementBaseC04formC0Sbvp">formElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Override formElement info input elements are form element for default is <code>true</code></p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">override</span> <span class="k">var</span> <span class="nv">formElement</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Initialization"></a>
@@ -357,9 +302,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7jumpper16InputElementBaseC_4typeACSS_SStcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:type:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7jumpper16InputElementBaseC_4typeACSS_SStcfc">init(_:<wbr>type:<wbr>)</a>
+                    <a name="/s:7jumpper5RadioC_2id4nameACSS_SSSgAFtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:id:name:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7jumpper5RadioC_2id4nameACSS_SSSgAFtcfc">init(_:<wbr>id:<wbr>name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -367,14 +312,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Default initializer input element</p>
+                        <p>Default initializer input radio element</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -390,19 +335,31 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>This is a value for input <strong>value</strong> <code>String</code></p>
+                                  <p>This is a value for radio <strong>value</strong> <code>String</code></p>
                                 </div>
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <code>
-                                <em>type</em>
+                                <em>id</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>This is a type for input <strong>type</strong> <code>String</code></p>
+                                  <p>This is a id for radio <strong>id</strong> <code>String?</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>This is a name for name <strong>name</strong> <code>String?</code></p>
                                 </div>
                               </td>
                             </tr>
