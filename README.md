@@ -22,6 +22,17 @@
 </p>
 -----
 
+# In refactoring, 
+
+For now the python version of the project is available at: [https://github.com/micheltlutz/Winged-Python](https://github.com/micheltlutz/Winged-Python)
+
+I will soon update this repository with improvements and evolutions following the same calls as the python version.
+
+
+-----
+
+## DEPRECATED
+
 Welcome to **jumpper**. Is an open source framework, which is independent of other web frameworks or toolkits available on the market, such as Vapor, Kitura and Perfect. It can be used in conjunction with any of them and even alone. This shows how simple it is to build HTML pages using only **Swift**.
 
 The idea of this library is to facilitate the creation of static or dynamic pages.
