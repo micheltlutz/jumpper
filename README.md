@@ -1,29 +1,10 @@
 <p align="center">
     <img src="doc/banner.png" width="500" height="127" alt="jumpper">
-    <br>
-    <br>
-    <a href="https://swift.org">
-        <img src="http://img.shields.io/badge/swift-5.2-brightgreen.svg" alt="Swift 5.2">
-    </a>
-    <a href="https://swift.org/package-manager">
-        <img src="https://img.shields.io/badge/swiftpm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
-    </a>
-    <img src="https://img.shields.io/badge/platforms-mac+linux-brightgreen.svg?style=flat" alt="Mac + Linux" />
-    <img src="https://github.com/jumpper/jumpper/workflows/Swift/badge.svg?branch=develop" alt="jumpper tests" />
-    <a href="https://raw.githubusercontent.com/jumpper/jumpper/develop/LICENSE">
-    	<img src="https://img.shields.io/github/license/jumpper/jumpper" alt="License" />
-    </a>
-    <a href="https://codebeat.co/a/michel-anderson-lutz-teixeira/projects/github-com-jumpper-jumpper-develop">
-    	<img src="https://codebeat.co/badges/31d5d9f4-77af-4e51-9523-30f55ae9a069" alt="codebeat badge" />
-    </a>
-</p>
-<p align="center">
-<a href="https://www.buymeacoffee.com/micheltlutz" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 </p>
 -----
 
 # In refactoring, 
-
+New Swift LIB: [Winged-Swift](https://github.com/micheltlutz/Winged-Swift)
 For now the python version of the project is available at: [https://github.com/micheltlutz/Winged-Python](https://github.com/micheltlutz/Winged-Python)
 
 I will soon update this repository with improvements and evolutions following the same calls as the python version.
